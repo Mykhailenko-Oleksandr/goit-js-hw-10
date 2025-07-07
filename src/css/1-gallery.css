@@ -1,0 +1,23 @@
+.gallery {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-wrap: wrap;
+  gap: 24px;
+  margin-top: 24px;
+}
+
+.gallery-image {
+  width: 360px;
+  height: 200px;
+  transition: transform 250ms ease;
+
+  &:hover {
+    transform: scale(1.04);
+  }
+}
+
+.gallery-caption {
+  font-weight: 700;
+  text-align: center;
+}

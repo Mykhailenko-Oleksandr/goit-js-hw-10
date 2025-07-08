@@ -1,56 +1,101 @@
-.feedback-form {
+.form {
   display: flex;
   flex-direction: column;
   align-items: center;
-  padding: 24px;
+  margin-top: 36px;
+
+  font-family: 'Montserrat', sans-serif;
 }
 
-.form-label {
+.form > label {
   display: flex;
   flex-direction: column;
   gap: 8px;
-  font-family: 'Montserrat', sans-serif;
+
+  font-size: 16px;
   letter-spacing: 0.04em;
-  line-height: 1.5;
   color: #2e2f42;
+
+  margin-bottom: 16px;
 }
 
-.form-input,
-.form-textarea {
-  font-family: 'Montserrat', sans-serif;
-  width: 360px;
-  height: 40px;
+.form > label > input {
   border: 1px solid #808080;
-  padding: 8px 16px;
   border-radius: 4px;
-  margin-bottom: 8px;
+  width: 360px;
+  padding: 7px 16px;
   outline: none;
-  transition: border-color 250ms ease;
+
+  font-size: 16px;
+  letter-spacing: 0.04em;
   color: #2e2f42;
+  line-height: 1.5;
+
+  transition: border-color 250ms ease;
+
+  &:hover {
+    border-color: #000;
+  }
+
+  &:focus {
+    border-color: #4e75ff;
+  }
+}
+
+.fieldset {
+  display: flex;
+  justify-content: space-between;
+
+  border: 1px solid #808080;
+  border-radius: 4px;
+  width: 360px;
+  padding: 14px 48px 8px;
+  margin-bottom: 24px;
+
+  transition: border-color 250ms ease;
 
   &:hover {
     border-color: #000;
   }
 }
 
-.form-textarea {
-  height: 80px;
-  margin-bottom: 16px;
+.fieldset > legend {
+  font-size: 16px;
+  letter-spacing: 0.04em;
+  color: #2e2f42;
 }
 
-.form-btn {
-  position: relative;
-  right: 132px;
-  background-color: #4e75ff;
-  border-radius: 8px;
-  border: none;
-  min-width: 95px;
-  padding: 8px 16px;
+.fieldset > label {
+  font-size: 16px;
+  color: #2e2f42;
+
+  display: flex;
+  gap: 14px;
+  align-items: center;
+
+  &:hover {
+  }
+}
+
+.fieldset > label > input {
+  width: 20px;
+  height: 20px;
+}
+
+form > button {
+  font-family: 'Montserrat', sans-serif;
   font-weight: 500;
   font-size: 16px;
   line-height: 1.5;
   letter-spacing: 0.04em;
   color: #fff;
+
+  border-radius: 8px;
+  padding: 8px 16px;
+  width: 360px;
+  background-color: #4e75ff;
+  border: none;
+
   transition: background-color 250ms ease;
 
   &:hover {

@@ -102,3 +102,7 @@ form > button {
     background-color: #6c8cff;
   }
 }
+
+.izi-toast {
+  min-width: 383px;
+}

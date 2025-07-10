@@ -13,9 +13,9 @@
     />
     <script type="module" crossorigin src="/goit-js-hw-10/1-timer.js"></script>
     <link rel="modulepreload" crossorigin href="/goit-js-hw-10/assets/modulepreload-polyfill-B5Qt9EMX.js">
-    <link rel="modulepreload" crossorigin href="/goit-js-hw-10/assets/vendor-BbSUbo7J.js">
-    <link rel="stylesheet" crossorigin href="/goit-js-hw-10/assets/vendor-C1gPI-5C.css">
-    <link rel="stylesheet" crossorigin href="/goit-js-hw-10/assets/styles-BhYA59l_.css">
+    <link rel="modulepreload" crossorigin href="/goit-js-hw-10/assets/vendor-BbbuE1sJ.js">
+    <link rel="stylesheet" crossorigin href="/goit-js-hw-10/assets/vendor-CZjNVMTf.css">
+    <link rel="stylesheet" crossorigin href="/goit-js-hw-10/assets/styles-BLN9xxbk.css">
   </head>
   <body>
     <header class="header">
@@ -36,25 +36,29 @@
 
     <main>
       <div class="container">
-        <input class="date-time-input" type="text" id="datetime-picker" />
-        <button class="start-btn" type="button" data-start>Start</button>
+        <div class="timer-wrap">
+          <div>
+            <input class="date-time-input" type="text" id="datetime-picker" />
+            <button class="start-btn" type="button" data-start>Start</button>
+          </div>
 
-        <div class="timer">
-          <div class="field">
-            <span class="value" data-days>00</span>
-            <span class="label">Days</span>
-          </div>
-          <div class="field">
-            <span class="value" data-hours>00</span>
-            <span class="label">Hours</span>
-          </div>
-          <div class="field">
-            <span class="value" data-minutes>00</span>
-            <span class="label">Minutes</span>
-          </div>
-          <div class="field">
-            <span class="value" data-seconds>00</span>
-            <span class="label">Seconds</span>
+          <div class="timer">
+            <div class="field">
+              <span class="value" data-days>00</span>
+              <span class="label">Days</span>
+            </div>
+            <div class="field">
+              <span class="value" data-hours>00</span>
+              <span class="label">Hours</span>
+            </div>
+            <div class="field">
+              <span class="value" data-minutes>00</span>
+              <span class="label">Minutes</span>
+            </div>
+            <div class="field">
+              <span class="value" data-seconds>00</span>
+              <span class="label">Seconds</span>
+            </div>
           </div>
         </div>
       </div>

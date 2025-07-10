@@ -4,6 +4,8 @@ import "flatpickr/dist/flatpickr.min.css";
 import iziToast from "izitoast";
 import "izitoast/dist/css/iziToast.min.css";
 
+import icon from '../img/error.svg'
+
 const datetimePicker = document.querySelector('#datetime-picker')
 const start = document.querySelector('[data-start]')
 const days = document.querySelector('[data-days]')
@@ -31,7 +33,7 @@ const options = {
                 messageSize: '16',
                 messageLineHeight: '24',
                 backgroundColor: '#ef4040',
-                iconUrl: '../img/error.svg',
+                iconUrl: icon,
                 position: 'topRight',
                 progressBarColor: '#b51b1b',
                 theme: 'dark',

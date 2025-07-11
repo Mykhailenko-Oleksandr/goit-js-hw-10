@@ -55,7 +55,6 @@ function onStartClick(event) {
 
         if (stayMillisecondsUserDate <= 0) {
             clearInterval(intervalId)
-            start.disabled = false;
             datetimePicker.disabled = false;
             return;
         }
